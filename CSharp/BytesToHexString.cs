@@ -83,14 +83,12 @@ namespace CSharp
         /// <summary>
         /// 数组长度
         /// </summary>
-        private const int ArrayLength = 100000;
+        private readonly int[] ArrayLengths = [100, 1000, 10000];
 
         /// <summary>
-        /// 数组长度
+        /// 数据
         /// </summary>
-        private readonly int[] ArrayLengths = new int[3] { 100, 1000, 10000 };
-
-        private readonly Dictionary<int, byte[,]> Datas = new Dictionary<int, byte[,]>();
+        private readonly Dictionary<int, byte[,]> Datas = [];
 
         [GlobalSetup]
         public void Setup()

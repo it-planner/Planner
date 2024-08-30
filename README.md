@@ -22,6 +22,7 @@
 
 ## 算法  
 ### LeetCode题库
+  - [LeetCode题集-1- 两数之和](https://mp.weixin.qq.com/s/FEEFHtJ_zCCai1w0CCdwPQ)
    
 # 架构设计
 
