@@ -14,13 +14,20 @@
   <a href="https://my.oschina.net/u/4767676"><img src="https://img.shields.io/badge/oschina-开源中国-green" alt="开源中国"></a>
 </p>
 
+# 数学
+# 计算机基础
 # 数据结构与算法
 
 ## 数据结构  
 
 ## 算法  
-### 1. LeetCode题库
+### LeetCode题库
    
+# 架构设计
+
+## 设计原则与模式  
+
+## 架构风格  
 # 编程语言
 
 ## 库
@@ -31,12 +38,14 @@
 ### Ideal库
 #### Ideal.Core.Common库
 
-## 中间件
 ## .NET
 ### C#/.NET Core
 #### 基础
   - [net core中byte数组如何高效转换为16进制字符串](https://mp.weixin.qq.com/s/U-2nkoQ80x_ehS6KDRWLgg)
+  - [C#/.net core “hello”.IndexOf(“\0”,2)中的坑](https://mp.weixin.qq.com/s/mFigIMTF-HfWbnrJn-rIsw)
 
+
+# 中间件
 
 # 数据库
 ## MySQL
@@ -44,6 +53,7 @@
 ## Redis
 
 
+# DevOps
 
 
 # 赞赏码
