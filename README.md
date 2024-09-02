@@ -36,6 +36,7 @@
 #### 文档翻译系列
   - [Serilog文档翻译系列（一） - 入门指南](https://mp.weixin.qq.com/s/iWa34SeJTNxDk2wL1WhfQQ)
   - [Serilog文档翻译系列（二） - 设置AspNetCore应用程序](https://mp.weixin.qq.com/s/ciUS9ye5E8eqQsDP1v-LIA)
+  - [Serilog文档翻译系列（三） - 基础配置](https://mp.weixin.qq.com/s/Px7oz4sZFMzoN6w6HqGdig)
 ### Ideal库
 #### Ideal.Core.Common库
 
@@ -44,6 +45,9 @@
 #### 基础
   - [net core中byte数组如何高效转换为16进制字符串](https://mp.weixin.qq.com/s/U-2nkoQ80x_ehS6KDRWLgg)
   - [C#/.net core “hello”.IndexOf(“\0”,2)中的坑](https://mp.weixin.qq.com/s/mFigIMTF-HfWbnrJn-rIsw)
+#### 高级
+  - [net core中byte数组如何高效转换为16进制字符串](https://mp.weixin.qq.com/s/U-2nkoQ80x_ehS6KDRWLgg)
+  - [C#/.net core高级知识点，内存对齐，原理与示例](https://mp.weixin.qq.com/s/BxE_GUcwAVR_aJOaiu_hMg)
 
 
 # 中间件
