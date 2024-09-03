@@ -92,18 +92,13 @@
 
 # 赞赏码
 
-熬夜不易，觉得有很大帮助的朋友可以赏杯咖啡(不接受学生赞赏)。
+熬夜不易，觉得有很大帮助的朋友可以赞赏。
 ![](https://gitee.com/hugogoos/Planner/raw/master/images/tip_code.jpg)
 
-# 微信号
 
-加我微信，交个朋友，还可以加入我们的交流群哦。
-<a name="微信"></a>
-![](https://gitee.com/hugogoos/Planner/raw/master/images/wechat.jpg)
+# 微信号/公众号
+加我微信,关注我，这里可以最先看到我的原创文章哦。
+<a name="微信号/公众号"></a>
+![](https://gitee.com/hugogoos/Planner/raw/master/images/chat.png)
 
-# 公众号
-
-关注我，这里可以最先看到我的原创文章哦。
-<a name="公众号"></a>
-![](https://gitee.com/hugogoos/Planner/raw/master/images/public_account.png)
 
