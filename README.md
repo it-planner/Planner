@@ -22,7 +22,9 @@
 
 ## 算法  
 ### LeetCode题库
-  - [LeetCode题集-1- 两数之和](https://mp.weixin.qq.com/s/FEEFHtJ_zCCai1w0CCdwPQ)
+  - [LeetCode题集-1 - 两数之和](https://mp.weixin.qq.com/s/FEEFHtJ_zCCai1w0CCdwPQ)
+  - [LeetCode题集-2 - 两数相加]()
+  - [LeetCode题集-3 - 无重复字符的最长子串]()
    
 # 架构设计
 
@@ -37,25 +39,43 @@
   - [Serilog文档翻译系列（一） - 入门指南](https://mp.weixin.qq.com/s/iWa34SeJTNxDk2wL1WhfQQ)
   - [Serilog文档翻译系列（二） - 设置AspNetCore应用程序](https://mp.weixin.qq.com/s/ciUS9ye5E8eqQsDP1v-LIA)
   - [Serilog文档翻译系列（三） - 基础配置](https://mp.weixin.qq.com/s/Px7oz4sZFMzoN6w6HqGdig)
+  - [Serilog文档翻译系列（四） - 结构化数据]()
+  - [Serilog文档翻译系列（四） - 编写日志事件]()
+  - [Serilog文档翻译系列（四） - 可用的接收器]()
+  - [Serilog文档翻译系列（四） - 增强]()
+  - [Serilog文档翻译系列（四） - 格式化输出]()
+  - [Serilog文档翻译系列（四） - 应用设置]()
+  - [Serilog文档翻译系列（四） - 调试和诊断]()
+  - [Serilog文档翻译系列（四） - 开发接收器]()
+  - [Serilog文档翻译系列（四） - 记录器的生命周期]()
+  - [Serilog文档翻译系列（四） - 可靠性]()
+
 ### Ideal库
 #### Ideal.Core.Common库
 
 ## .NET
 ### C#/.NET Core
 #### 基础
-  - [net core中byte数组如何高效转换为16进制字符串](https://mp.weixin.qq.com/s/U-2nkoQ80x_ehS6KDRWLgg)
-  - [C#/.net core “hello”.IndexOf(“\0”,2)中的坑](https://mp.weixin.qq.com/s/mFigIMTF-HfWbnrJn-rIsw)
+  - [C#|.net core 基础 -  byte数组如何高效转换为16进制字符串](https://mp.weixin.qq.com/s/U-2nkoQ80x_ehS6KDRWLgg)
+  - [C#|.net core 基础 - “hello”.IndexOf(“\0”,2)中的坑](https://mp.weixin.qq.com/s/mFigIMTF-HfWbnrJn-rIsw)
+  - [C#|.net core 基础 - 如何判断连续子序列](https://mp.weixin.qq.com/s/r7VdvqpTf2LklDjH92a39w)
 #### 高级
-  - [net core中byte数组如何高效转换为16进制字符串](https://mp.weixin.qq.com/s/U-2nkoQ80x_ehS6KDRWLgg)
-  - [C#/.net core高级知识点，内存对齐，原理与示例](https://mp.weixin.qq.com/s/BxE_GUcwAVR_aJOaiu_hMg)
+  - [C#|.net core 高级 - 内存对齐，原理与示例](https://mp.weixin.qq.com/s/BxE_GUcwAVR_aJOaiu_hMg)
 
 
 # 中间件
 
 # 数据库
-## MySQL
 
 ## Redis
+### 入门
+  - [Redis入门 - 简介]()
+  - [Redis入门 - 安装]()
+  - [Redis入门 - 客户端工具]()
+  - [Redis入门 - 基础指令学习]()
+  - [Redis入门 - C#/.NET实战]()
+  - [Redis入门 - C#/.NET封装]()
+## MySQL
 
 
 # DevOps
