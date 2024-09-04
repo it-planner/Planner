@@ -77,7 +77,7 @@
 
 ## Redis
 ### 入门
-  - [Redis入门 - 简介]
+  - [Redis入门 - 简介](https://mp.weixin.qq.com/s/xJ0heceb58tTzusW4VpSCQ)
   - [Redis入门 - 安装]
   - [Redis入门 - 客户端工具]
   - [Redis入门 - 基础指令学习]
@@ -92,8 +92,8 @@
 
 # 赞赏码
 
-熬夜不易，觉得有很大帮助的朋友可以赞赏。
-![](https://gitee.com/hugogoos/Planner/raw/master/images/tip_code.jpg)
+觉得有很大帮助的朋友可以赞赏。
+![](https://gitee.com/hugogoos/Planner/raw/master/images/zhifu.png)
 
 
 # 微信号/公众号
