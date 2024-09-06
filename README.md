@@ -1,6 +1,6 @@
 ﻿# IT Panner
 
-我会从下图中的知识点去写这个系列，很多细节的点，可能想得不是很完善，大家可以去[【公众号】](#公众号)获取或者加我[【微信】](#微信)提意见(别忘记**Star**哟)。
+我会从下图中的知识点去写这个系列，很多细节的点，可能想得不是很完善，大家可以去[【公众号】](#微信号/公众号)获取或者加我[【微信】](#微信号/公众号)提意见(别忘记**Star**哟)。
 
 
 <p align="center">
@@ -23,7 +23,7 @@
 ## 算法  
 ### LeetCode题库
   - [LeetCode题集-1 - 两数之和](https://mp.weixin.qq.com/s/FEEFHtJ_zCCai1w0CCdwPQ)
-  - [LeetCode题集-2 - 两数相加]
+  - [LeetCode题集-2 - 两数相加](https://mp.weixin.qq.com/s/oNcTM5L_pEw8dVZrciV5kg)
   - [LeetCode题集-3 - 无重复字符的最长子串]
    
 # 架构设计
@@ -43,7 +43,7 @@
   - [Serilog文档翻译系列（一） - 入门指南](https://mp.weixin.qq.com/s/iWa34SeJTNxDk2wL1WhfQQ)
   - [Serilog文档翻译系列（二） - 设置AspNetCore应用程序](https://mp.weixin.qq.com/s/ciUS9ye5E8eqQsDP1v-LIA)
   - [Serilog文档翻译系列（三） - 基础配置](https://mp.weixin.qq.com/s/Px7oz4sZFMzoN6w6HqGdig)
-  - [Serilog文档翻译系列（四） - 结构化数据]
+  - [Serilog文档翻译系列（四） - 结构化数据](https://mp.weixin.qq.com/s/7mhXxMI_M4t-u42qG8kosQ)
   - [Serilog文档翻译系列（五） - 编写日志事件]
   - [Serilog文档翻译系列（六） - 可用的接收器]
   - [Serilog文档翻译系列（七） - 增强]

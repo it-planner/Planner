@@ -55,6 +55,7 @@ namespace CSharp
         public static bool IsSubsequence<T>(IEnumerable<T> main, IEnumerable<T> sub) where T : IEquatable<T>?
         {
             var mainSpan = main.ToArray().AsSpan();
+            //var mainSpan = CollectionsMarshal.AsSpan(main.ToList());
             var subSpan = sub.ToArray().AsSpan();
             return mainSpan.IndexOf(subSpan) > -1;
         }
