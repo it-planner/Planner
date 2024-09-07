@@ -4,8 +4,8 @@
 
 
 <p align="center">
-  <a href="#微信"><img src="https://img.shields.io/badge/weChat-微信群-blue.svg" alt="微信群"></a>
-  <a href="#公众号"><img src="https://img.shields.io/badge/公众号-IT规划师-lightgrey.svg" alt="公众号"></a>
+  <a href="#微信号/公众号"><img src="https://img.shields.io/badge/weChat-微信群-blue.svg" alt="微信群"></a>
+  <a href="#微信号/公众号"><img src="https://img.shields.io/badge/公众号-IT规划师-lightgrey.svg" alt="公众号"></a>
   <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAglpgOCuXZXXyifatKX4HTiUdge6AS_TLNucazVkphrg/"><img src="https://img.shields.io/badge/toutiao-头条-9cf" alt="头条"></a>
   <a href="https://juejin.im/user/2330620383998413"><img src="https://img.shields.io/badge/juejin-掘金-blue.svg" alt="掘金"></a>
   <a href="https://www.zhihu.com/people/hugogoos"><img src="https://img.shields.io/badge/zhihu-知乎-informational" alt="知乎"></a>
@@ -78,7 +78,7 @@
 ## Redis
 ### 入门
   - [Redis入门 - 简介](https://mp.weixin.qq.com/s/xJ0heceb58tTzusW4VpSCQ)
-  - [Redis入门 - 安装]
+  - [Redis入门 - 安装](https://mp.weixin.qq.com/s/qoZ2SQGDvFHfbR_SKeyT4w)
   - [Redis入门 - 客户端工具]
   - [Redis入门 - 基础指令学习]
   - [Redis入门 - C#/.NET实战]
