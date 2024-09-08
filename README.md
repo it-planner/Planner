@@ -79,7 +79,7 @@
 ### 入门
   - [Redis入门 - 简介](https://mp.weixin.qq.com/s/xJ0heceb58tTzusW4VpSCQ)
   - [Redis入门 - 安装](https://mp.weixin.qq.com/s/qoZ2SQGDvFHfbR_SKeyT4w)
-  - [Redis入门 - 客户端工具]
+  - [Redis入门 - 图形化管理工具如何选择，最全分类](https://mp.weixin.qq.com/s/4-2LPQ8yA5fsoRTWu-KHaw)
   - [Redis入门 - 基础指令学习]
   - [Redis入门 - C#/.NET实战]
   - [Redis入门 - C#/.NET封装]
