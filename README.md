@@ -24,7 +24,7 @@
 ### LeetCode题库
   - [LeetCode题集-1 - 两数之和](https://mp.weixin.qq.com/s/FEEFHtJ_zCCai1w0CCdwPQ)
   - [LeetCode题集-2 - 两数相加](https://mp.weixin.qq.com/s/oNcTM5L_pEw8dVZrciV5kg)
-  - [LeetCode题集-3 - 无重复字符的最长子串]
+  - [LeetCode题集-3 - 无重复字符的最长子串](https://mp.weixin.qq.com/s/_hGSOFxC4MCZyspMoxXZTg)
    
 # 架构设计
 

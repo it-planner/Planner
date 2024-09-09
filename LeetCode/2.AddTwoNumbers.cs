@@ -1,10 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCode
 {
@@ -29,7 +24,7 @@ namespace LeetCode
             //用于迭代节点
             var current = head;
             //初始化进位值
-            int carry = 0;
+            var carry = 0;
 
             //当两个链表节点都不为空并且进位值不等于0，则继续迭代
             while (l1 != null || l2 != null || carry != 0)

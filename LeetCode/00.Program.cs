@@ -1,66 +1,13 @@
-﻿using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Environments;
-using BenchmarkDotNet.Jobs;
-using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Running;
 using System.Collections.Concurrent;
 using System.Reflection;
-using System.Xml.Linq;
 
 namespace LeetCode
 {
     internal partial class Program
     {
-        public static int LengthOfLongestSubstring(string s)
+        private static void Main(string[] args)
         {
-            if (s.Length == 0)
-            {
-                return 0;
-            }
-
-            if (s.Length == 1)
-            {
-                return 1;
-            }
-
-            var ss = s.AsSpan();
-            var len = 1;
-            var index = 1;
-            var startIndex = 0;
-            int target = 1;
-            ReadOnlySpan<char> res = ss.Slice(startIndex, len);
-            while (len < ss.Length && index < ss.Length)
-            {
-                var fristIndex = res.IndexOf(ss[index]);
-                if (fristIndex == -1)
-                {
-                    res = ss.Slice(startIndex, res.Length + 1);
-                    if (target <= res.Length)
-                    {
-                        target = res.Length;
-                    }
-                    len++;
-                }
-                else
-                {
-                    fristIndex = fristIndex + index - res.Length ;
-                    startIndex = fristIndex + 1;
-                    res = ss.Slice(startIndex, index-fristIndex);
-                    if (target <= res.Length)
-                    {
-                        target = res.Length;
-                    }
-                }
-                index++;
-            }
-
-            return target;
-        }
-
-        static void Main(string[] args)
-        {
-            var s = "aabaab!bb";
-            var dd = LengthOfLongestSubstring(s);
-            Console.WriteLine(dd);
             string? input;
 
             do

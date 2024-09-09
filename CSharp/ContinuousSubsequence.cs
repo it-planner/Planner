@@ -22,7 +22,7 @@ namespace CSharp
         {
             var mainLength = main.Count();
             var subLength = sub.Count();
-            for (int i = 0; i < mainLength - subLength + 1; i++)
+            for (var i = 0; i < mainLength - subLength + 1; i++)
             {
                 var expect = main.Skip(i).Take(subLength);
                 if (expect.SequenceEqual(sub))
@@ -40,7 +40,7 @@ namespace CSharp
             var subSpan = sub.ToArray().AsSpan();
             var mainLength = mainSpan.Length;
             var subLength = subSpan.Length;
-            for (int i = 0; i < mainLength - subLength + 1; i++)
+            for (var i = 0; i < mainLength - subLength + 1; i++)
             {
                 var expect = mainSpan.Slice(i, subLength);
                 if (expect.SequenceEqual(subSpan))
@@ -66,7 +66,7 @@ namespace CSharp
             string[] subJoin = ["d", "e"];
 
 
-            bool isSubsequenceJoin = ContinuousSubsequence.IsSubsequenceJoin(mainJoin, subJoin);
+            var isSubsequenceJoin = ContinuousSubsequence.IsSubsequenceJoin(mainJoin, subJoin);
 
             Console.WriteLine("IsSubsequenceJoin 方法: ");
             Console.WriteLine("");

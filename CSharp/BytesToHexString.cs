@@ -1,12 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Jobs;
-using BenchmarkDotNet.Reports;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CSharp
 {
@@ -14,8 +7,8 @@ namespace CSharp
     {
         public static string ToHexStringStringBuilder(byte[] bytes)
         {
-            StringBuilder hex = new StringBuilder(bytes.Length * 2);
-            foreach (byte b in bytes)
+            var hex = new StringBuilder(bytes.Length * 2);
+            foreach (var b in bytes)
             {
                 hex.AppendFormat("{0:x2}", b);
             }
@@ -34,13 +27,13 @@ namespace CSharp
 
         public static string ToHexStringBitOperation(byte[] bytes)
         {
-            char[] hexChars = new char[bytes.Length * 2];
+            var hexChars = new char[bytes.Length * 2];
             const string hex = "0123456789ABCDEF";
 
-            for (int i = 0; i < bytes.Length; i++)
+            for (var i = 0; i < bytes.Length; i++)
             {
                 hexChars[i * 2] = hex[bytes[i] >> 4];
-                hexChars[i * 2 + 1] = hex[bytes[i] & 0x0F];
+                hexChars[(i * 2) + 1] = hex[bytes[i] & 0x0F];
             }
 
             return new string(hexChars);
@@ -55,14 +48,14 @@ namespace CSharp
             {
                 fixed (char* charPtr = hexChars)
                 {
-                    byte* source = bytePtr;
-                    char* dest = charPtr;
+                    var source = bytePtr;
+                    var dest = charPtr;
 
-                    for (int i = 0; i < bytes.Length; i++)
+                    for (var i = 0; i < bytes.Length; i++)
                     {
-                        byte b = source[i];
+                        var b = source[i];
                         dest[i * 2] = hex[b >> 4];
-                        dest[i * 2 + 1] = hex[b & 0x0F];
+                        dest[(i * 2) + 1] = hex[b & 0x0F];
                     }
                 }
             }
@@ -218,12 +211,12 @@ namespace CSharp
 
         private static void Handle(byte[,] res, Func<byte[], string> func)
         {
-            int colCount = res.GetLength(1);
-            for (int rowIndex = 0; rowIndex < res.GetLength(0); rowIndex++)
+            var colCount = res.GetLength(1);
+            for (var rowIndex = 0; rowIndex < res.GetLength(0); rowIndex++)
             {
-                byte[] row = new byte[colCount];
+                var row = new byte[colCount];
 
-                for (int colIndex = 0; colIndex < colCount; colIndex++)
+                for (var colIndex = 0; colIndex < colCount; colIndex++)
                 {
                     row[colIndex] = res[rowIndex, colIndex];
                 }
