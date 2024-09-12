@@ -25,6 +25,13 @@
   - [LeetCode题集-1 - 两数之和](https://mp.weixin.qq.com/s/FEEFHtJ_zCCai1w0CCdwPQ)
   - [LeetCode题集-2 - 两数相加](https://mp.weixin.qq.com/s/oNcTM5L_pEw8dVZrciV5kg)
   - [LeetCode题集-3 - 无重复字符的最长子串](https://mp.weixin.qq.com/s/_hGSOFxC4MCZyspMoxXZTg)
+  - [LeetCode题集-4 - 寻找两个正序数组的中位数]
+  - [LeetCode题集-5 - 最长回文子串]
+  - [LeetCode题集-6 - Z字形变换]
+  - [LeetCode题集-7 - 整数反转]
+  - [LeetCode题集-8 - 字符串转换整数 (atoi)]
+  - [LeetCode题集-9 - 回文数]
+  - [LeetCode题集-10 - 正则表达式匹配]
    
 # 架构设计
 
@@ -80,8 +87,8 @@
   - [Redis入门 - 简介](https://mp.weixin.qq.com/s/xJ0heceb58tTzusW4VpSCQ)
   - [Redis入门 - 安装](https://mp.weixin.qq.com/s/qoZ2SQGDvFHfbR_SKeyT4w)
   - [Redis入门 - 图形化管理工具如何选择，最全分类](https://mp.weixin.qq.com/s/4-2LPQ8yA5fsoRTWu-KHaw)
-  - [Redis入门 - 基础指令学习]
-  - [Redis入门 - C#/.NET实战]
+  - [Redis入门 - Redis 入门 - 五大基础类型及其指令学习](https://mp.weixin.qq.com/s/88asgJzWMAJirHOLzY3hiw)
+  - [Redis入门 - Redis 入门 - C#.NET|Core客户端库六种选择](https://mp.weixin.qq.com/s/pebL_HmuYS_rz_3D8Gxf6g)
   - [Redis入门 - C#/.NET封装]
 ## MySQL
 
