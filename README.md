@@ -87,9 +87,9 @@
   - [Redis入门 - 简介](https://mp.weixin.qq.com/s/xJ0heceb58tTzusW4VpSCQ)
   - [Redis入门 - 安装](https://mp.weixin.qq.com/s/qoZ2SQGDvFHfbR_SKeyT4w)
   - [Redis入门 - 图形化管理工具如何选择，最全分类](https://mp.weixin.qq.com/s/4-2LPQ8yA5fsoRTWu-KHaw)
-  - [Redis入门 - Redis 入门 - 五大基础类型及其指令学习](https://mp.weixin.qq.com/s/88asgJzWMAJirHOLzY3hiw)
-  - [Redis入门 - Redis 入门 - C#.NET|Core客户端库六种选择](https://mp.weixin.qq.com/s/pebL_HmuYS_rz_3D8Gxf6g)
-  - [Redis入门 - C#/.NET封装]
+  - [Redis入门 - 五大基础类型及其指令学习](https://mp.weixin.qq.com/s/88asgJzWMAJirHOLzY3hiw)
+  - [Redis入门 - C#|.NETCore客户端库六种选择](https://mp.weixin.qq.com/s/pebL_HmuYS_rz_3D8Gxf6g)
+  - [Redis入门 - C#|.NET封装]
 ## MySQL
 
 
