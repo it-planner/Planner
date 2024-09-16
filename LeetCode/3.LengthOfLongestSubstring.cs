@@ -1,11 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
-using System.Diagnostics.Metrics;
-using System.Text;
 
 namespace LeetCode
 {
-    public class _2_LengthOfLongestSubstring
+    public class _3_LengthOfLongestSubstring
     {
         public static int SlidingWindow(string s)
         {
@@ -138,7 +136,7 @@ namespace LeetCode
 
     [SimpleJob(RuntimeMoniker.Net80, baseline: true)]
     [MemoryDiagnoser]
-    public class _3_LengthOfLongestSubstring : IBenchmark
+    public class _3_LengthOfLongestSubstringBenchmark : IBenchmark
     {
         /// <summary>
         /// 测试次数
@@ -159,9 +157,9 @@ namespace LeetCode
             var random = new Random();
             for (var j = 0; j < TestNumber; j++)
             {
-                char[] stringChars = new char[StringLength];
+                var stringChars = new char[StringLength];
 
-                for (int i = 0; i < StringLength; i++)
+                for (var i = 0; i < StringLength; i++)
                 {
                     stringChars[i] = chars[random.Next(chars.Length)];
                 }
@@ -176,7 +174,7 @@ namespace LeetCode
         {
             foreach (var str in Datas)
             {
-                _ = _2_LengthOfLongestSubstring.SlidingWindow(str);
+                _ = _3_LengthOfLongestSubstring.SlidingWindow(str);
             }
         }
 
@@ -185,7 +183,7 @@ namespace LeetCode
         {
             foreach (var str in Datas)
             {
-                _ = _2_LengthOfLongestSubstring.SlidingWindowDictionary(str);
+                _ = _3_LengthOfLongestSubstring.SlidingWindowDictionary(str);
             }
         }
 
@@ -195,7 +193,7 @@ namespace LeetCode
         {
             foreach (var str in Datas)
             {
-                _ = _2_LengthOfLongestSubstring.SlidingWindowArray(str);
+                _ = _3_LengthOfLongestSubstring.SlidingWindowArray(str);
             }
         }
     }

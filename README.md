@@ -25,7 +25,7 @@
   - [LeetCode题集-1 - 两数之和](https://mp.weixin.qq.com/s/FEEFHtJ_zCCai1w0CCdwPQ)
   - [LeetCode题集-2 - 两数相加](https://mp.weixin.qq.com/s/oNcTM5L_pEw8dVZrciV5kg)
   - [LeetCode题集-3 - 无重复字符的最长子串](https://mp.weixin.qq.com/s/_hGSOFxC4MCZyspMoxXZTg)
-  - [LeetCode题集-4 - 寻找两个正序数组的中位数]
+  - [LeetCode题集-4 - 寻找两个正序数组的中位数](https://mp.weixin.qq.com/s/0ckbc2M7DZ5Cpt_NLwXHXw)
   - [LeetCode题集-5 - 最长回文子串]
   - [LeetCode题集-6 - Z字形变换]
   - [LeetCode题集-7 - 整数反转]
