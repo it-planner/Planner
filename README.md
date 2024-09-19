@@ -72,6 +72,7 @@
   - [C#|.net core 基础 -  byte数组如何高效转换为16进制字符串](https://mp.weixin.qq.com/s/U-2nkoQ80x_ehS6KDRWLgg)
   - [C#|.net core 基础 - “hello”.IndexOf(“\0”,2)中的坑](https://mp.weixin.qq.com/s/mFigIMTF-HfWbnrJn-rIsw)
   - [C#|.net core 基础 - 如何判断连续子序列](https://mp.weixin.qq.com/s/r7VdvqpTf2LklDjH92a39w)
+  - [C#|.net core 基础 - 值传递 vs 引用传递](https://mp.weixin.qq.com/s/SOYN6y09k1HzpZZZPxf_tw)
 #### 高级
   - [C#|.net core 高级 - 内存对齐，原理与示例](https://mp.weixin.qq.com/s/BxE_GUcwAVR_aJOaiu_hMg)
 

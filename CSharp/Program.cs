@@ -6,7 +6,7 @@ namespace CSharp
     {
         private static void Main(string[] args)
         {
-
+            ValueReferenceExample.Run();
             _ = BenchmarkRunner.Run<BytesToHexStringBenchmark>();
 
         }
