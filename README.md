@@ -74,6 +74,7 @@
   - [C#|.net core 基础 - 如何判断连续子序列](https://mp.weixin.qq.com/s/r7VdvqpTf2LklDjH92a39w)
   - [C#|.net core 基础 - 值传递 vs 引用传递](https://mp.weixin.qq.com/s/SOYN6y09k1HzpZZZPxf_tw)
   - [C#|.net core 基础 - 扩展数组添加删除性能最好的方法](https://mp.weixin.qq.com/s/kzYUpReyElyGh0oAiYwsIw)
+  - [C#|.net core 基础 - 深拷贝的五大类 N 种实现方式](https://mp.weixin.qq.com/s/CO4HFt97SJRJsss6P63Q-w)
 #### 高级
   - [C#|.net core 高级 - 内存对齐，原理与示例](https://mp.weixin.qq.com/s/BxE_GUcwAVR_aJOaiu_hMg)
 

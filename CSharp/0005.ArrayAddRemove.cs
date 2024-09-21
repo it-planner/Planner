@@ -156,9 +156,9 @@ namespace CSharp
         /// <summary>
         /// 数组长度
         /// </summary>
-        private readonly int[] ArrayLengths = [100, 1000, 5000, 10000];
+        private readonly int[] ArrayLengths = new int[4] { 100, 1000, 5000, 10000 };
 
-        private readonly Dictionary<int, (int[] nums, int[] target)[]> Datas = [];
+        private readonly Dictionary<int, (int[] nums, int[] target)[]> Datas = new();
 
 
         [GlobalSetup]
@@ -193,82 +193,82 @@ namespace CSharp
             }
         }
 
-        //#region Add
-        //[Benchmark]
-        //public void AddByList_10000_100()
-        //{
-        //    var res = Datas[100];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByList(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddByConcat_10000_100()
-        //{
-        //    var res = Datas[100];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByConcat(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddByCopy_10000_100()
-        //{
-        //    var res = Datas[100];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByCopy(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddBySpan_10000_100()
-        //{
-        //    var res = Datas[100];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
-        //}
+        #region Add
+        [Benchmark]
+        public void AddByList_10000_100()
+        {
+            var res = Datas[100];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByList(nums, target));
+        }
+        [Benchmark]
+        public void AddByConcat_10000_100()
+        {
+            var res = Datas[100];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByConcat(nums, target));
+        }
+        [Benchmark]
+        public void AddByCopy_10000_100()
+        {
+            var res = Datas[100];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByCopy(nums, target));
+        }
+        [Benchmark]
+        public void AddBySpan_10000_100()
+        {
+            var res = Datas[100];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
+        }
 
-        //[Benchmark]
-        //public void AddByList_10000_1000()
-        //{
-        //    var res = Datas[1000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByList(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddByConcat_10000_1000()
-        //{
-        //    var res = Datas[1000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByConcat(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddByCopy_10000_1000()
-        //{
-        //    var res = Datas[1000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByCopy(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddBySpan_10000_1000()
-        //{
-        //    var res = Datas[1000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
-        //}
+        [Benchmark]
+        public void AddByList_10000_1000()
+        {
+            var res = Datas[1000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByList(nums, target));
+        }
+        [Benchmark]
+        public void AddByConcat_10000_1000()
+        {
+            var res = Datas[1000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByConcat(nums, target));
+        }
+        [Benchmark]
+        public void AddByCopy_10000_1000()
+        {
+            var res = Datas[1000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByCopy(nums, target));
+        }
+        [Benchmark]
+        public void AddBySpan_10000_1000()
+        {
+            var res = Datas[1000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
+        }
 
-        //[Benchmark]
-        //public void AddByList_10000_10000()
-        //{
-        //    var res = Datas[10000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByList(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddByConcat_10000_10000()
-        //{
-        //    var res = Datas[10000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByConcat(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddByCopy_10000_10000()
-        //{
-        //    var res = Datas[10000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddByCopy(nums, target));
-        //}
-        //[Benchmark]
-        //public void AddBySpan_10000_10000()
-        //{
-        //    var res = Datas[10000];
-        //    Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
-        //}
-        //#endregion
+        [Benchmark]
+        public void AddByList_10000_10000()
+        {
+            var res = Datas[10000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByList(nums, target));
+        }
+        [Benchmark]
+        public void AddByConcat_10000_10000()
+        {
+            var res = Datas[10000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByConcat(nums, target));
+        }
+        [Benchmark]
+        public void AddByCopy_10000_10000()
+        {
+            var res = Datas[10000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddByCopy(nums, target));
+        }
+        [Benchmark]
+        public void AddBySpan_10000_10000()
+        {
+            var res = Datas[10000];
+            Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
+        }
+        #endregion
 
         #region Remove
         [Benchmark]
