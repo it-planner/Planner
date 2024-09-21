@@ -462,9 +462,9 @@ namespace LeetCode
             }
 
             //左指针
-            int idxLeft = 0;
+            var idxLeft = 0;
             //右指针
-            int idxRight = nums1.Length;
+            var idxRight = nums1.Length;
             //对数组1进行二分查找
             while (idxLeft <= idxRight)
             {
@@ -561,7 +561,7 @@ namespace LeetCode
                 for (var j = 0; j < TestNumber; j++)
                 {
                     var list = new List<int>();
-                    var l1= random.Next(2) == 0 ? al : al - 1;
+                    var l1 = random.Next(2) == 0 ? al : al - 1;
                     for (var i = 0; i < l1; i++)
                     {
                         list.Add(random.Next(1, al));

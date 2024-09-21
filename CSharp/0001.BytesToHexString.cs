@@ -81,7 +81,7 @@ namespace CSharp
         /// <summary>
         /// 数据
         /// </summary>
-        private readonly Dictionary<int, byte[,]> Datas = new();
+        private readonly Dictionary<int, byte[,]> Datas = [];
 
         [GlobalSetup]
         public void Setup()

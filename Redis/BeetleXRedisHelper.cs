@@ -8,7 +8,7 @@ namespace Redis
         {
             Console.WriteLine($"BeetleX.Redis 使用示例");
             // 创建 CSRedisClient 实例
-            RedisDB redis = new RedisDB(0)
+            var redis = new RedisDB(0)
             {
                 DataFormater = new JsonFormater()
             };

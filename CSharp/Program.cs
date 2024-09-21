@@ -1,10 +1,5 @@
-﻿using BenchmarkDotNet.Columns;
-using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Reports;
+﻿using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Running;
-using Perfolizer.Horology;
-using Perfolizer.Metrology;
-using System.Globalization;
 
 namespace CSharp
 {

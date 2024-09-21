@@ -62,8 +62,8 @@ namespace CSharp
 
         public static void Run()
         {
-            string[] mainJoin = new string[5] { "a", "b", "c", "d", "e" };
-            string[] subJoin = new string[2] { "d", "e" };
+            var mainJoin = new string[5] { "a", "b", "c", "d", "e" };
+            var subJoin = new string[2] { "d", "e" };
 
 
             var isSubsequenceJoin = ContinuousSubsequence.IsSubsequenceJoin(mainJoin, subJoin);
@@ -76,8 +76,8 @@ namespace CSharp
             Console.WriteLine("");
             Console.WriteLine("mainString.Contains(subString) 结果: " + isSubsequenceJoin);
 
-            string[] mainSerialize = new string[4] { "a", "b", "c", "d,\"e" };
-            string[] subSerialize = new string[1] { "e" };
+            var mainSerialize = new string[4] { "a", "b", "c", "d,\"e" };
+            var subSerialize = new string[1] { "e" };
 
             var isSubsequenceSerialize = ContinuousSubsequence.IsSubsequenceSerialize(mainSerialize, subSerialize);
 

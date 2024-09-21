@@ -3,14 +3,11 @@ using BenchmarkDotNet.Attributes;
 using FastDeepCloner;
 using Force.DeepCloner;
 using MessagePack;
-using Microsoft.Diagnostics.Tracing.StackSources;
 using System.Collections;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Security.AccessControl;
 using System.Xml.Serialization;
 
 namespace CSharp
@@ -21,7 +18,7 @@ namespace CSharp
         public string Name { get; set; }
         public MemberwiseCloneModel Clone()
         {
-            return (MemberwiseCloneModel)this.MemberwiseClone();
+            return (MemberwiseCloneModel)MemberwiseClone();
         }
     }
 
@@ -53,7 +50,7 @@ namespace CSharp
 
     public class DeepCopyILEmit<T>
     {
-        private static Dictionary<Type, Func<T, T>> _cacheILEmit = new();
+        private static readonly Dictionary<Type, Func<T, T>> _cacheILEmit = [];
 
         public static T ILEmit(T original)
         {
@@ -66,7 +63,7 @@ namespace CSharp
                 var lbf = generator.DeclareLocal(type);
                 generator.Emit(OpCodes.Newobj, cInfo);
                 generator.Emit(OpCodes.Stloc_0);
-                foreach (FieldInfo field in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
+                foreach (var field in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
                 {
                     generator.Emit(OpCodes.Ldloc_0);
                     generator.Emit(OpCodes.Ldarg_0);
@@ -87,7 +84,7 @@ namespace CSharp
 
     public class DeepCopyExpressionTree<T>
     {
-        private static readonly Dictionary<Type, Func<T, T>> _cacheExpressionTree = new();
+        private static readonly Dictionary<Type, Func<T, T>> _cacheExpressionTree = [];
         public static T ExpressionTree(T original)
         {
             var type = typeof(T);
@@ -96,8 +93,10 @@ namespace CSharp
                 var originalParam = Expression.Parameter(type, "original");
                 var clone = Expression.Variable(type, "clone");
 
-                var expressions = new List<Expression>();
-                expressions.Add(Expression.Assign(clone, Expression.New(type)));
+                var expressions = new List<Expression>
+                {
+                    Expression.Assign(clone, Expression.New(type))
+                };
 
                 foreach (var prop in type.GetProperties())
                 {
@@ -118,7 +117,7 @@ namespace CSharp
     }
     public class DeepCopy
     {
-        private static IMapper _mapper;
+        private static readonly IMapper _mapper;
         static DeepCopy()
         {
             var config = new MapperConfiguration(cfg =>
@@ -154,14 +153,14 @@ namespace CSharp
         {
             var original = new CloneModel
             {
-                Models = new List<CloneModel>
-                {
+                Models =
+                [
                     new()
                     {
                         Age= 1,
                         Name="1"
                     }
-                }
+                ]
             };
             var clone = new CloneModel
             {
@@ -205,13 +204,11 @@ namespace CSharp
         }
         public static T SerializeByXml<T>(T original)
         {
-            using (var ms = new MemoryStream())
-            {
-                XmlSerializer s = new XmlSerializer(typeof(T));
-                s.Serialize(ms, original);
-                ms.Position = 0;
-                return (T)s.Deserialize(ms);
-            }
+            using var ms = new MemoryStream();
+            var s = new XmlSerializer(typeof(T));
+            s.Serialize(ms, original);
+            ms.Position = 0;
+            return (T)s.Deserialize(ms);
         }
         public static T SerializeByTextJson<T>(T original)
         {
@@ -226,7 +223,7 @@ namespace CSharp
 
         public static T ThirdPartyByAutomapper<T>(T original)
         {
-            T clone = _mapper.Map<T, T>(original);
+            var clone = _mapper.Map<T, T>(original);
             return clone;
         }
         public static T ThirdPartyByDeepCloner<T>(T original)
@@ -302,7 +299,7 @@ namespace CSharp
         /// </summary>
         private readonly int[] ArrayLengths = new int[3] { 100, 1000, 10000 };
 
-        private readonly Dictionary<int, DataContractModel[]> Datas = new();
+        private readonly Dictionary<int, DataContractModel[]> Datas = [];
 
 
         [GlobalSetup]
@@ -322,8 +319,8 @@ namespace CSharp
                     {
                         Age = num++,
                         Name = num.ToString(),
-                        Models = new List<DataContractModel>
-                            {
+                        Models =
+                            [
                                 new DataContractModel
                                 {
                                     Age = num++,
@@ -334,7 +331,7 @@ namespace CSharp
                                     Age = num++,
                                     Name = num.ToString(),
                                 },
-                            }
+                            ]
                     });
                 }
 

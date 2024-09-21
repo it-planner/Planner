@@ -1,7 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using System.Buffers;
 using System.Collections.Immutable;
-using System.Text;
 
 namespace CSharp
 {
@@ -72,7 +71,7 @@ namespace CSharp
             // 复制原数组
             sourceSpan.CopyTo(span);
             // 添加新元素
-            addedSpan.CopyTo(span.Slice(sourceSpan.Length));
+            addedSpan.CopyTo(span[sourceSpan.Length..]);
 
             return span.ToArray();
         }
@@ -97,7 +96,7 @@ namespace CSharp
         public static int[] RemoveByForList(int[] source, int[] added)
         {
             var list = new List<int>();
-            foreach (int item in source)
+            foreach (var item in source)
             {
                 if (!added.Contains(item))
                 {
@@ -158,7 +157,7 @@ namespace CSharp
         /// </summary>
         private readonly int[] ArrayLengths = new int[4] { 100, 1000, 5000, 10000 };
 
-        private readonly Dictionary<int, (int[] nums, int[] target)[]> Datas = new();
+        private readonly Dictionary<int, (int[] nums, int[] target)[]> Datas = [];
 
 
         [GlobalSetup]

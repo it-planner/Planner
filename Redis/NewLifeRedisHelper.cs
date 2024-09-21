@@ -8,7 +8,7 @@ namespace Redis
         {
             Console.WriteLine($"NewLife.Redis 使用示例");
             // 创建 CSRedisClient 实例
-            var redis =  new FullRedis("127.0.0.1:6379", "", 0);
+            var redis = new FullRedis("127.0.0.1:6379", "", 0);
             //设置键值对
             var setResult = redis.Set("key1", "value1");
             Console.WriteLine($"设置键值对key1/value1操作结果：{setResult}");

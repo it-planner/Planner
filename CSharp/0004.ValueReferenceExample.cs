@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp
+﻿namespace CSharp
 {
     public class ValueReferenceExample
     {
@@ -60,7 +54,7 @@ namespace CSharp
         public static void ChangeReferenceByReference(ref Test a)
         {
             Console.WriteLine($"    被调用方法-接收到 a.Age 值：{a.Age}");
-            a.Age = a.Age + 1;
+            a.Age++;
             Console.WriteLine($"    被调用方法-修改后 a.Age 值：{a.Age}");
         }
 
@@ -77,7 +71,7 @@ namespace CSharp
         public static void ChangeValueByReference(ref int a)
         {
             Console.WriteLine($"    被调用方法-接收到 a 值：{a}");
-            a = a + 1;
+            a++;
             Console.WriteLine($"    被调用方法-修改后 a 值：{a}");
         }
 
@@ -123,7 +117,7 @@ namespace CSharp
         public static void ChangeReferenceByValue(Test a)
         {
             Console.WriteLine($"    被调用方法-接收到 a.Age 值：{a.Age}");
-            a.Age = a.Age + 1;
+            a.Age++;
             Console.WriteLine($"    被调用方法-修改后 a.Age 值：{a.Age}");
         }
 
@@ -140,7 +134,7 @@ namespace CSharp
         public static void ChangeValueByValue(int a)
         {
             Console.WriteLine($"    被调用方法-接收到 a 值：{a}");
-            a = a + 1;
+            a++;
             Console.WriteLine($"    被调用方法-修改后 a 值：{a}");
         }
     }
