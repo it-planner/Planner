@@ -17,6 +17,7 @@
 # 数学
 # 计算机基础
 # 数据结构与算法
+  - [数据结构与算法之间有何关系？](https://mp.weixin.qq.com/s/DfEEi5lqXBdL9rtvvaPFzA)
 
 ## 数据结构  
 
@@ -93,7 +94,7 @@
   - [Redis入门 - 五大基础类型及其指令学习](https://mp.weixin.qq.com/s/88asgJzWMAJirHOLzY3hiw)
   - [Redis入门 - C#|.NETCore客户端库六种选择](https://mp.weixin.qq.com/s/pebL_HmuYS_rz_3D8Gxf6g)
   - [Redis入门 - C#|.NET Core封装Nuget包](https://mp.weixin.qq.com/s/UzeoGUjIUZCSgolGOBJQcw)
-  - [Redis入门 - 收官]
+  - [Redis入门 - 收官](https://mp.weixin.qq.com/s/PTD-vfdzhJVT_uaaLR3hHQ)
 ### 进阶
 ## MySQL
 
