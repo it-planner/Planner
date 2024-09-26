@@ -76,6 +76,18 @@ namespace CSharp
             return span.ToArray();
         }
 
+
+        public static void AddBySpan(int[] source, int[] added, int[] result)
+        {
+            Span<int> sourceSpan = source;
+            Span<int> addedSpan = added;
+            Span<int> span = result;
+            // 复制原数组
+            sourceSpan.CopyTo(span);
+            // 添加新元素
+            addedSpan.CopyTo(span[sourceSpan.Length..]);
+        }
+
         public static int[] RemoveByList(int[] source, int[] added)
         {
             var list = source.ToList();
@@ -217,6 +229,17 @@ namespace CSharp
             var res = Datas[100];
             Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
         }
+        [Benchmark]
+        public void AddBySpan2_10000_100()
+        {
+            var res = Datas[100];
+
+            foreach (var (nums, target) in res)
+            {
+                var result = new int[nums.Length + target.Length];
+                ArrayAddRemove.AddBySpan(nums, target, result);
+            }
+        }
 
         [Benchmark]
         public void AddByList_10000_1000()
@@ -242,6 +265,17 @@ namespace CSharp
             var res = Datas[1000];
             Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
         }
+        [Benchmark]
+        public void AddBySpan2_10000_1000()
+        {
+            var res = Datas[1000];
+
+            foreach (var (nums, target) in res)
+            {
+                var result = new int[nums.Length + target.Length];
+                ArrayAddRemove.AddBySpan(nums, target, result);
+            }
+        }
 
         [Benchmark]
         public void AddByList_10000_10000()
@@ -266,6 +300,17 @@ namespace CSharp
         {
             var res = Datas[10000];
             Handle(res, (nums, target) => _ = ArrayAddRemove.AddBySpan(nums, target));
+        }
+        [Benchmark]
+        public void AddBySpan2_10000_10000()
+        {
+            var res = Datas[10000];
+
+            foreach (var (nums, target) in res)
+            {
+                var result = new int[nums.Length + target.Length];
+                ArrayAddRemove.AddBySpan(nums, target, result);
+            }
         }
         #endregion
 

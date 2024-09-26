@@ -20,6 +20,8 @@
   - [数据结构与算法之间有何关系？](https://mp.weixin.qq.com/s/DfEEi5lqXBdL9rtvvaPFzA)
 
 ## 数据结构  
+  - [数据结构 - 概述及其术语](https://mp.weixin.qq.com/s/1iu1aIgZ4c05lHw9O0MrBQ)
+  - [数据结构 - 数组](https://mp.weixin.qq.com/s/pdaa_xDytDy-WgKTvWxRDA)
 
 ## 算法  
 ### LeetCode题库
@@ -52,7 +54,7 @@
   - [Serilog文档翻译系列（二） - 设置AspNetCore应用程序](https://mp.weixin.qq.com/s/ciUS9ye5E8eqQsDP1v-LIA)
   - [Serilog文档翻译系列（三） - 基础配置](https://mp.weixin.qq.com/s/Px7oz4sZFMzoN6w6HqGdig)
   - [Serilog文档翻译系列（四） - 结构化数据](https://mp.weixin.qq.com/s/7mhXxMI_M4t-u42qG8kosQ)
-  - [Serilog文档翻译系列（五） - 编写日志事件]
+  - [Serilog文档翻译系列（五） - 编写日志事件](https://mp.weixin.qq.com/s/Y6cnAEwQTWwcuojqYXwmYQ)
   - [Serilog文档翻译系列（六） - 可用的接收器]
   - [Serilog文档翻译系列（七） - 增强]
   - [Serilog文档翻译系列（八） - 格式化输出]

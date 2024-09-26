@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp", "CSharp\CSharp.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode", "LeetCode\LeetCode.csproj", "{F14B00AD-B5A0-4A37-80E5-FAF298A0131A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis", "Redis\Redis.csproj", "{A64F9F46-647D-4298-B37E-0D6D718C51D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Redis", "Redis\Redis.csproj", "{A64F9F46-647D-4298-B37E-0D6D718C51D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA", "DSA\DSA.csproj", "{2535FD57-A3FB-4C82-934F-518D2B04001F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A64F9F46-647D-4298-B37E-0D6D718C51D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64F9F46-647D-4298-B37E-0D6D718C51D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64F9F46-647D-4298-B37E-0D6D718C51D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2535FD57-A3FB-4C82-934F-518D2B04001F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2535FD57-A3FB-4C82-934F-518D2B04001F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2535FD57-A3FB-4C82-934F-518D2B04001F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2535FD57-A3FB-4C82-934F-518D2B04001F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

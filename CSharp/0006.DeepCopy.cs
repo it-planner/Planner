@@ -134,22 +134,25 @@ namespace CSharp
             NativeRecordWith();
         }
 
-        public static void NativeMemberwiseClone()
+        public static MemberwiseCloneModel NativeMemberwiseClone()
         {
             var original = new MemberwiseCloneModel();
             var clone = original.Clone();
-            Console.WriteLine(original == clone);
-            Console.WriteLine(ReferenceEquals(original, clone));
+            //Console.WriteLine(original == clone);
+            //Console.WriteLine(ReferenceEquals(original, clone));
+            return clone;
         }
 
-        public static void NativeRecordWith()
+        public static RecordWithModel NativeRecordWith()
         {
             var original = new RecordWithModel();
             var clone = original with { };
-            Console.WriteLine(original == clone);
-            Console.WriteLine(ReferenceEquals(original, clone));
+            //Console.WriteLine(original == clone);
+            //Console.WriteLine(ReferenceEquals(original, clone));
+            return clone;
         }
-        public static void ManualPure()
+
+        public static CloneModel ManualPure()
         {
             var original = new CloneModel
             {
@@ -172,8 +175,9 @@ namespace CSharp
                     Name = x.Name,
                 }).ToList()
             };
-            Console.WriteLine(original == clone);
-            Console.WriteLine(ReferenceEquals(original, clone));
+            //Console.WriteLine(original == clone);
+            //Console.WriteLine(ReferenceEquals(original, clone));
+            return clone;
         }
 
         public static T SerializeByBinary<T>(T original)
@@ -341,6 +345,25 @@ namespace CSharp
         }
 
         [Benchmark]
+        public void NativeMemberwiseClone_100()
+        {
+            var res = Datas[100];
+            Handle(res, () => DeepCopy.NativeMemberwiseClone());
+        }
+        [Benchmark]
+        public void NativeRecordWith_100()
+        {
+            var res = Datas[100];
+            Handle(res, () => DeepCopy.NativeRecordWith());
+        }
+        [Benchmark]
+        public void ManualPure_100()
+        {
+            var res = Datas[100];
+            Handle(res, () => DeepCopy.ManualPure());
+        }
+
+        [Benchmark]
         public void SerializeByBinary_100()
         {
             var res = Datas[100];
@@ -411,6 +434,25 @@ namespace CSharp
         {
             var res = Datas[100];
             Handle(res, models => _ = DeepCopyExpressionTree<DataContractModel>.ExpressionTree(models));
+        }
+
+        [Benchmark]
+        public void NativeMemberwiseClone_1000()
+        {
+            var res = Datas[1000];
+            Handle(res, () => DeepCopy.NativeMemberwiseClone());
+        }
+        [Benchmark]
+        public void NativeRecordWith_1000()
+        {
+            var res = Datas[1000];
+            Handle(res, () => DeepCopy.NativeRecordWith());
+        }
+        [Benchmark]
+        public void ManualPure_1000()
+        {
+            var res = Datas[1000];
+            Handle(res, () => DeepCopy.ManualPure());
         }
         [Benchmark]
         public void SerializeByBinary_1000()
@@ -484,6 +526,25 @@ namespace CSharp
             var res = Datas[1000];
             Handle(res, models => _ = DeepCopyExpressionTree<DataContractModel>.ExpressionTree(models));
         }
+
+        [Benchmark]
+        public void NativeMemberwiseClone_10000()
+        {
+            var res = Datas[10000];
+            Handle(res, () => DeepCopy.NativeMemberwiseClone());
+        }
+        [Benchmark]
+        public void NativeRecordWith_10000()
+        {
+            var res = Datas[10000];
+            Handle(res, () => DeepCopy.NativeRecordWith());
+        }
+        [Benchmark]
+        public void ManualPure_10000()
+        {
+            var res = Datas[10000];
+            Handle(res, () => DeepCopy.ManualPure());
+        }
         [Benchmark]
         public void SerializeByBinary_10000()
         {
@@ -556,11 +617,22 @@ namespace CSharp
             var res = Datas[10000];
             Handle(res, models => _ = DeepCopyExpressionTree<DataContractModel>.ExpressionTree(models));
         }
+
+
         private static void Handle(DataContractModel[] models, Func<DataContractModel, DataContractModel> func)
         {
             foreach (var model in models)
             {
                 func(model);
+            }
+        }
+
+
+        private static void Handle(DataContractModel[] models, Action action)
+        {
+            foreach (var model in models)
+            {
+                action();
             }
         }
     }

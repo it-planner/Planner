@@ -14,7 +14,7 @@ namespace CSharp
             //                                   sizeUnit: null,
             //                                   timeUnit: null,
             //                                   textColumnJustification: SummaryTable.SummaryTableColumn.TextJustification.Right));
-            _ = BenchmarkRunner.Run<DeepCopyBenchmark>(config);
+            _ = BenchmarkRunner.Run<ArrayAddRemoveBenchmark>(config);
         }
     }
 }
