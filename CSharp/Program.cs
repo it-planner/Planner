@@ -7,6 +7,8 @@ namespace CSharp
     {
         private static void Main(string[] args)
         {
+            //TrimLastChar.Run();
+
             var config = ManualConfig.Create(DefaultConfig.Instance)
                          .WithOptions(ConfigOptions.DisableOptimizationsValidator);
             //.WithSummaryStyle(new SummaryStyle(cultureInfo: CultureInfo.InvariantCulture,
@@ -14,7 +16,7 @@ namespace CSharp
             //                                   sizeUnit: null,
             //                                   timeUnit: null,
             //                                   textColumnJustification: SummaryTable.SummaryTableColumn.TextJustification.Right));
-            _ = BenchmarkRunner.Run<ArrayAddRemoveBenchmark>(config);
+            _ = BenchmarkRunner.Run<TrimLastCharBenchmark>(config);
         }
     }
 }

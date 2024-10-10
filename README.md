@@ -55,14 +55,9 @@
   - [Serilog文档翻译系列（三） - 基础配置](https://mp.weixin.qq.com/s/Px7oz4sZFMzoN6w6HqGdig)
   - [Serilog文档翻译系列（四） - 结构化数据](https://mp.weixin.qq.com/s/7mhXxMI_M4t-u42qG8kosQ)
   - [Serilog文档翻译系列（五） - 编写日志事件](https://mp.weixin.qq.com/s/Y6cnAEwQTWwcuojqYXwmYQ)
-  - [Serilog文档翻译系列（六） - 可用的接收器]
-  - [Serilog文档翻译系列（七） - 增强]
-  - [Serilog文档翻译系列（八） - 格式化输出]
-  - [Serilog文档翻译系列（九） - 应用设置]
-  - [Serilog文档翻译系列（十） - 调试和诊断]
-  - [Serilog文档翻译系列（十一） - 开发接收器]
-  - [Serilog文档翻译系列（十二） - 记录器的生命周期]
-  - [Serilog文档翻译系列（十三） - 可靠性]
+  - [Serilog文档翻译系列（六） - 可用的接收器、增强器、格式化输出](https://mp.weixin.qq.com/s/yvLiZnBW-HXx1juyWh7Jhg)
+  - [Serilog文档翻译系列（七） - 应用设置、调试和诊断、开发接收器](https://mp.weixin.qq.com/s/hlvaIUiaRr2nudK7FfcMIQ)
+  - [Serilog文档翻译系列（八） - 记录器的生命周期、可靠性]
 
 ### Ideal库
 #### Ideal.Core.Common库
@@ -78,6 +73,7 @@
   - [C#|.net core 基础 - 值传递 vs 引用传递](https://mp.weixin.qq.com/s/SOYN6y09k1HzpZZZPxf_tw)
   - [C#|.net core 基础 - 扩展数组添加删除性能最好的方法](https://mp.weixin.qq.com/s/kzYUpReyElyGh0oAiYwsIw)
   - [C#|.net core 基础 - 深拷贝的五大类 N 种实现方式](https://mp.weixin.qq.com/s/CO4HFt97SJRJsss6P63Q-w)
+  - [C#|.net core 基础 - 删除字符串最后一个字符的七大类N种实现方式](https://mp.weixin.qq.com/s/BG1yUcP9nYROI7C09ywYDA)
 #### 高级
   - [C#|.net core 高级 - 内存对齐，原理与示例](https://mp.weixin.qq.com/s/BxE_GUcwAVR_aJOaiu_hMg)
 
