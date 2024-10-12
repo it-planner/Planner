@@ -2,17 +2,8 @@
 
 namespace DSA
 {
-    public class MyselfArray
-    {
-        //申请内存起始位置指针
-        private IntPtr _pointer;
-        //数组长度
-        private int _length;
-    }
 
-
-
-    public class MyselfArray1 : IDisposable
+    public sealed class MyselfArray : IDisposable
     {
         //申请内存起始位置指针
         private IntPtr _pointer;
@@ -20,7 +11,7 @@ namespace DSA
         private int _length;
 
         //初始化数组为指定长度，并元素设置默认值0
-        public MyselfArray1 Init(int capacity)
+        public MyselfArray Init(int capacity)
         {
             //初始化数组长度为capacity
             _length = capacity;

@@ -22,6 +22,13 @@
 ## 数据结构  
   - [数据结构 - 概述及其术语](https://mp.weixin.qq.com/s/1iu1aIgZ4c05lHw9O0MrBQ)
   - [数据结构 - 数组](https://mp.weixin.qq.com/s/pdaa_xDytDy-WgKTvWxRDA)
+  - [数据结构 - 链表](https://mp.weixin.qq.com/s/POsdrru9ZJzH4Ey2NMv6zw)
+  - [数据结构 - 栈]
+  - [数据结构 - 队列]
+  - [数据结构 - 树]
+  - [数据结构 - 堆]
+  - [数据结构 - 散列]
+  - [数据结构 - 图]
 
 ## 算法  
 ### LeetCode题库
@@ -57,7 +64,7 @@
   - [Serilog文档翻译系列（五） - 编写日志事件](https://mp.weixin.qq.com/s/Y6cnAEwQTWwcuojqYXwmYQ)
   - [Serilog文档翻译系列（六） - 可用的接收器、增强器、格式化输出](https://mp.weixin.qq.com/s/yvLiZnBW-HXx1juyWh7Jhg)
   - [Serilog文档翻译系列（七） - 应用设置、调试和诊断、开发接收器](https://mp.weixin.qq.com/s/hlvaIUiaRr2nudK7FfcMIQ)
-  - [Serilog文档翻译系列（八） - 记录器的生命周期、可靠性]
+  - [Serilog文档翻译系列（八） - 记录器的生命周期、可靠性](https://mp.weixin.qq.com/s/Plu9tVG_sSbUEcn137yP_Q)
 
 ### Ideal库
 #### Ideal.Core.Common库
