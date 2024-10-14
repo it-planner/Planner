@@ -24,7 +24,7 @@
   - [数据结构 - 数组](https://mp.weixin.qq.com/s/pdaa_xDytDy-WgKTvWxRDA)
   - [数据结构 - 链表](https://mp.weixin.qq.com/s/POsdrru9ZJzH4Ey2NMv6zw)
   - [数据结构 - 栈](https://mp.weixin.qq.com/s/XVS-pvRC7Mmh4hHKzPkndw)
-  - [数据结构 - 队列]
+  - [数据结构 - 队列](https://mp.weixin.qq.com/s/Ixl_9rdplGrE0sFB_TRfvA)
   - [数据结构 - 树]
   - [数据结构 - 堆]
   - [数据结构 - 散列]

@@ -1,19 +1,26 @@
-﻿namespace DSA
+﻿using System.Text.Json;
+
+namespace DSA
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //using var node = new MyselfLinkedList();
-            //var tou = node.Init();
-            //var length = node.Length;
-            //var haha = node.InsertAfter(tou, "哈哈");
-            //node.Update(haha, "哈11哈");
-            //var length1 = node.Length;
-            //var tou1 = node.HeadNode;
-            //var haha1 = node.InsertAfter(tou1.Value, "哈哈1");
-            //var test = node.Find("哈哈1");
-            //node.Remove(haha1);
+            //var queue = new MyselfQueueLinkedList<int>();
+            //queue.Enqueue(5);
+            //Console.WriteLine(JsonSerializer.Serialize(queue));
+            //queue.Dequeue();
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Enqueue(4);
+            //queue.Enqueue(5);
+            //queue.Dequeue();
+            //queue.Dequeue();
+            //queue.Dequeue();
+            //queue.Dequeue();
+            //queue.Dequeue();
+            //queue.Dequeue();
 
             Console.WriteLine("Hello, World!");
         }
