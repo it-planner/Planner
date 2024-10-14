@@ -23,7 +23,7 @@
   - [数据结构 - 概述及其术语](https://mp.weixin.qq.com/s/1iu1aIgZ4c05lHw9O0MrBQ)
   - [数据结构 - 数组](https://mp.weixin.qq.com/s/pdaa_xDytDy-WgKTvWxRDA)
   - [数据结构 - 链表](https://mp.weixin.qq.com/s/POsdrru9ZJzH4Ey2NMv6zw)
-  - [数据结构 - 栈]
+  - [数据结构 - 栈](https://mp.weixin.qq.com/s/XVS-pvRC7Mmh4hHKzPkndw)
   - [数据结构 - 队列]
   - [数据结构 - 树]
   - [数据结构 - 堆]
