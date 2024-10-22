@@ -25,7 +25,9 @@
   - [数据结构 - 链表](https://mp.weixin.qq.com/s/POsdrru9ZJzH4Ey2NMv6zw)
   - [数据结构 - 栈](https://mp.weixin.qq.com/s/XVS-pvRC7Mmh4hHKzPkndw)
   - [数据结构 - 队列](https://mp.weixin.qq.com/s/Ixl_9rdplGrE0sFB_TRfvA)
-  - [数据结构 - 树]
+  - [数据结构 - 树，初探](https://mp.weixin.qq.com/s/DKaBWW7_rz3xrxJs7mb7TA)
+  - [数据结构 - 树，再探](https://mp.weixin.qq.com/s/3_NeV-lCNc-bu7OAIiELfQ)
+  - [数据结构 - 树，三探之代码实现](https://mp.weixin.qq.com/s/s1k_kHgilWbyN2wYfm_R8g)
   - [数据结构 - 堆]
   - [数据结构 - 散列]
   - [数据结构 - 图]
