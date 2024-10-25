@@ -6,6 +6,55 @@ namespace DSA
     {
         static void Main(string[] args)
         {
+            var minHeap = new MyselfMinHeap();
+            minHeap.Init(8);
+            minHeap.Push(7);
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Push(6);
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Push(5);
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Push(4);
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Push(3);
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Push(2);
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Push(1);
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Pop();
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Pop();
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Pop();
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Pop();
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Pop();
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Pop();
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Pop();
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+            minHeap.Heapify(new int[8] { 8, 7, 6, 5, 4, 3, 2, 1 });
+            Console.WriteLine();
+            minHeap.LevelOrderTraversal();
+
+
             //var tree=new MyselfTreeLinkedList<int>();
             //tree.InitRoot(1);
             //tree.AddOrUpdateLeftChild(tree.Root, 2);
