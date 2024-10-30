@@ -29,7 +29,9 @@
   - [数据结构 - 树，再探](https://mp.weixin.qq.com/s/3_NeV-lCNc-bu7OAIiELfQ)
   - [数据结构 - 树，三探之代码实现](https://mp.weixin.qq.com/s/s1k_kHgilWbyN2wYfm_R8g)
   - [数据结构 - 堆](https://mp.weixin.qq.com/s/ttlsZGFSngs2vUe9bE-VKg)
-  - [数据结构 - 散列]
+  - [数据结构 - 散列表，初探](https://mp.weixin.qq.com/s/GZBDx0aOubRt-NQKjF_vpg)
+  - [数据结构 - 散列表，再探](https://mp.weixin.qq.com/s/4VC_zG0AIwgL4lirovfrhQ)
+  - [数据结构 - 散列表，三探之代码实现](https://mp.weixin.qq.com/s/Jy1PqfBi9BoXpvdr-VFUeA)
   - [数据结构 - 图]
 
 ## 算法  
