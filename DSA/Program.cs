@@ -6,6 +6,32 @@ namespace DSA
     {
         static void Main(string[] args)
         {
+            string[] vertexs = { "A", "B", "C", "D", "E", "F", "G" };
+            //string[] vertexs = { "0", "1", "2", "3", "4", "5", "6" };
+            //创建图对象
+            MyselfGraphArray<string> graph = new MyselfGraphArray<string>();
+            graph.Init(vertexs.Length);
+            //添加顶点
+            foreach (var item in vertexs)
+            {
+                graph.InsertVertex(item);
+            }
+            //添加边 A-B A-C B-C B-D B-E
+            graph.InsertEdge("A", "B", 1);//A-B
+            graph.InsertEdge("A", "C", 1);//A-C
+            graph.InsertEdge("A", "D", 1);//A-D
+            graph.InsertEdge("B", "E", 1);//A-B
+            graph.InsertEdge("B", "F", 1);//A-B
+            graph.InsertEdge("C", "F", 1);//A-B
+            graph.InsertEdge("C", "G", 1);//A-B
+            graph.InsertEdge("D", "G", 1);//A-B
+
+            //打印矩阵
+            graph.PrintGraph();
+
+            graph.DFS("A");
+            graph.BFS("A");
+            Console.Read();
 
             MyselfHashChaining<int, string> hashTable = new MyselfHashChaining<int, string>();
             hashTable.Init(10);
