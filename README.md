@@ -89,6 +89,8 @@
 #### 高级
   - [C#|.net core 高级 - 内存对齐，原理与示例](https://mp.weixin.qq.com/s/BxE_GUcwAVR_aJOaiu_hMg)
 
+### .NET9 & C#13
+  - [.NET9 - 新功能体验（一）](https://mp.weixin.qq.com/s/9jXq_bRsnjc_jr9ZYkutRg)
 
 # 中间件
 ## Kafka
@@ -119,6 +121,9 @@
   - [常用时间转换扩展方法（二）](https://mp.weixin.qq.com/s/R9B1zddUj_G0aEi2l4gENQ)
   - [获取特殊时间扩展方法（三）](https://mp.weixin.qq.com/s/11PJOVk8e3dMS6lig6yTbw)
   - [获取特殊时间扩展方法（四）](https://mp.weixin.qq.com/s/yDPZTwObp1kfCP__W62w-g)
+  - [常用枚举扩展方法（一）](https://mp.weixin.qq.com/s/USUaqrh8hiY2J7W_lvz73w)
+  - [常用枚举扩展方法（二）](https://mp.weixin.qq.com/s/Tn99Iad0b4ey3uE2wahG1w)
+  - [枚举扩展设计思路及实现难点（三）](https://mp.weixin.qq.com/s/JRyZevFaFMX5oVQRXH9fxg)
 
 
 # 赞赏码

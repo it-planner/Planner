@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Redis", "Redis\Redis.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA", "DSA\DSA.csproj", "{2535FD57-A3FB-4C82-934F-518D2B04001F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET9", "NET9\NET9.csproj", "{9471186F-EB7E-45A7-AD4C-9BFE15FBA43F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET8", "NET8\NET8.csproj", "{5F8E8528-7070-410D-90C2-4B3273C1E316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2535FD57-A3FB-4C82-934F-518D2B04001F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2535FD57-A3FB-4C82-934F-518D2B04001F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2535FD57-A3FB-4C82-934F-518D2B04001F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9471186F-EB7E-45A7-AD4C-9BFE15FBA43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9471186F-EB7E-45A7-AD4C-9BFE15FBA43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9471186F-EB7E-45A7-AD4C-9BFE15FBA43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9471186F-EB7E-45A7-AD4C-9BFE15FBA43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8E8528-7070-410D-90C2-4B3273C1E316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8E8528-7070-410D-90C2-4B3273C1E316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8E8528-7070-410D-90C2-4B3273C1E316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8E8528-7070-410D-90C2-4B3273C1E316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
