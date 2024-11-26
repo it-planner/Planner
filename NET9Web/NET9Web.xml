@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NET9Web</name>
+    </assembly>
+    <members>
+        <member name="M:NET9Web.Controllers.OrdersController.Get">
+            <summary>
+            获取
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NET9Web.Controllers.OrdersController.Post(NET9Web.Order)">
+            <summary>
+            添加
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NET9Web.Controllers.OrdersController.Put(System.String,NET9Web.Order)">
+            <summary>
+            修改
+            </summary>
+            <param name="id"></param>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NET9Web.Controllers.OrdersController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NET9Web.Order.Date">
+            <summary>
+            订单时间
+            </summary>
+        </member>
+    </members>
+</doc>

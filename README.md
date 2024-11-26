@@ -91,6 +91,9 @@
 
 ### .NET9 & C#13
   - [.NET9 - 新功能体验（一）](https://mp.weixin.qq.com/s/9jXq_bRsnjc_jr9ZYkutRg)
+  - [.NET9 - 新功能体验（二）](https://mp.weixin.qq.com/s/ODrphBs2GaKFT7yLHE_KtQ)
+  - [.NET9 - 新功能体验（三）](https://mp.weixin.qq.com/s/1xLgSXSwmGZb1DOV2kngJQ)
+  - [.NET9 - Swagger平替Scalar详解（四）](https://mp.weixin.qq.com/s/9eKpMR5fXm0L9PX99pQ05Q)
 
 # 中间件
 ## Kafka

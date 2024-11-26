@@ -48,17 +48,18 @@ namespace LeetCode
             return true;
         }
 
-        public static string longestPalindrome(String s)
+        public static string CenterExpand(string s)
         {
             if (s == null || s.Length < 1)
             {
                 return "";
             }
+
             int start = 0, end = 0;
             for (int i = 0; i < s.Length; i++)
             {
-                int len1 = expandAroundCenter(s, i, i);
-                int len2 = expandAroundCenter(s, i, i + 1);
+                int len1 = CenterExpand(s, i, i);
+                int len2 = CenterExpand(s, i, i + 1);
                 int len = Math.Max(len1, len2);
                 if (len > end - start)
                 {
@@ -69,7 +70,7 @@ namespace LeetCode
             return s[start..(end + 1)];
         }
 
-        public static int expandAroundCenter(String s, int left, int right)
+        public static int CenterExpand(string s, int left, int right)
         {
             while (left >= 0 && right < s.Length && s[left] == s[right])
             {
