@@ -11,7 +11,7 @@
   <a href="https://www.zhihu.com/people/hugogoos"><img src="https://img.shields.io/badge/zhihu-知乎-informational" alt="知乎"></a>
   <a href="https://me.csdn.net/zhulianfang1991"><img src="https://img.shields.io/badge/csdn-CSDN-red.svg" alt="CSDN"></a>
   <a href="https://www.cnblogs.com/hugogoos"><img src="https://img.shields.io/badge/cnblogs-博客园-important.svg" alt="博客园"></a>
-  <a href="https://my.oschina.net/u/4767676"><img src="https://img.shields.io/badge/oschina-开源中国-green" alt="开源中国"></a>
+  <a href="https://my.oschina.net/hugogoos"><img src="https://img.shields.io/badge/oschina-开源中国-green" alt="开源中国"></a>
 </p>
 
 # 数学
@@ -41,11 +41,12 @@
   - [LeetCode题集-2 - 两数相加](https://mp.weixin.qq.com/s/oNcTM5L_pEw8dVZrciV5kg)
   - [LeetCode题集-3 - 无重复字符的最长子串](https://mp.weixin.qq.com/s/_hGSOFxC4MCZyspMoxXZTg)
   - [LeetCode题集-4 - 寻找两个正序数组的中位数](https://mp.weixin.qq.com/s/0ckbc2M7DZ5Cpt_NLwXHXw)
-  - [LeetCode题集-5 - 最长回文子串]
-  - [LeetCode题集-6 - Z字形变换]
-  - [LeetCode题集-7 - 整数反转]
-  - [LeetCode题集-8 - 字符串转换整数 (atoi)]
-  - [LeetCode题集-9 - 回文数]
+  - [LeetCode题集-5 - 最长回文子串（一）](https://mp.weixin.qq.com/s/d_bSrrHRIJ3ZO10lr0Bnyw)
+  - [LeetCode题集-5 - 最长回文子串之马拉车（二）](https://mp.weixin.qq.com/s/xu5G1hsPr8GsQV9pXPBkTg)
+  - [LeetCode题集-6 - Z字形变换](https://mp.weixin.qq.com/s/stGUWWTDKm_LFDIHrUje5Q)
+  - [LeetCode题集-7 - 整数反转](https://mp.weixin.qq.com/s/QfQNix8MEioJw5ixuiLywg)
+  - [LeetCode题集-8 - 字符串转换整数 (atoi)](https://mp.weixin.qq.com/s/RJJXZQkWywy5n6xW5ChX7w)
+  - [LeetCode题集-9 - 回文数](https://mp.weixin.qq.com/s/YgIsj9ZqaHXA42_9kAnY7g)
   - [LeetCode题集-10 - 正则表达式匹配]
    
 # 架构设计
@@ -70,11 +71,6 @@
   - [Serilog文档翻译系列（六） - 可用的接收器、增强器、格式化输出](https://mp.weixin.qq.com/s/yvLiZnBW-HXx1juyWh7Jhg)
   - [Serilog文档翻译系列（七） - 应用设置、调试和诊断、开发接收器](https://mp.weixin.qq.com/s/hlvaIUiaRr2nudK7FfcMIQ)
   - [Serilog文档翻译系列（八） - 记录器的生命周期、可靠性](https://mp.weixin.qq.com/s/Plu9tVG_sSbUEcn137yP_Q)
-
-### Ideal库
-#### Ideal.Core.Common库
-
-
 
 ## .NET
 ### C#/.NET Core
@@ -120,13 +116,20 @@
 # 开源
 ## Ideal库
 ### Common库
-  - [常用时间转换扩展方法（一）](https://mp.weixin.qq.com/s/n19Qb-4PqL59esaXFwyOqA)
-  - [常用时间转换扩展方法（二）](https://mp.weixin.qq.com/s/R9B1zddUj_G0aEi2l4gENQ)
-  - [获取特殊时间扩展方法（三）](https://mp.weixin.qq.com/s/11PJOVk8e3dMS6lig6yTbw)
-  - [获取特殊时间扩展方法（四）](https://mp.weixin.qq.com/s/yDPZTwObp1kfCP__W62w-g)
-  - [常用枚举扩展方法（一）](https://mp.weixin.qq.com/s/USUaqrh8hiY2J7W_lvz73w)
-  - [常用枚举扩展方法（二）](https://mp.weixin.qq.com/s/Tn99Iad0b4ey3uE2wahG1w)
-  - [枚举扩展设计思路及实现难点（三）](https://mp.weixin.qq.com/s/JRyZevFaFMX5oVQRXH9fxg)
+  - [Common库 - 常用时间转换扩展方法（一）](https://mp.weixin.qq.com/s/n19Qb-4PqL59esaXFwyOqA)
+  - [Common库 - 常用时间转换扩展方法（二）](https://mp.weixin.qq.com/s/R9B1zddUj_G0aEi2l4gENQ)
+  - [Common库 - 获取特殊时间扩展方法（三）](https://mp.weixin.qq.com/s/11PJOVk8e3dMS6lig6yTbw)
+  - [Common库 - 获取特殊时间扩展方法（四）](https://mp.weixin.qq.com/s/yDPZTwObp1kfCP__W62w-g)
+  - [Common库 - 常用枚举扩展方法（一）](https://mp.weixin.qq.com/s/USUaqrh8hiY2J7W_lvz73w)
+  - [Common库 - 常用枚举扩展方法（二）](https://mp.weixin.qq.com/s/Tn99Iad0b4ey3uE2wahG1w)
+  - [Common库 - 枚举扩展设计思路及实现难点（三）](https://mp.weixin.qq.com/s/JRyZevFaFMX5oVQRXH9fxg)
+
+### Document库
+  - [Document库 - Excel帮助类，设计思路（一）](https://mp.weixin.qq.com/s/UO9KSK6IOxAHeSU4sCJ16w)
+  - [Common库 - Excel帮助类，TableHelper实现（二）](https://mp.weixin.qq.com/s/F4LuN_GC00iVUPtVGnOxaw)
+  - [Common库 - Excel帮助类，TableHelper实现（三）](https://mp.weixin.qq.com/s/7Jm97-9VmyR_dC5KJPrZ7A)
+  - [Document库 - Excel帮助类，ExcelHelper实现（四）](https://mp.weixin.qq.com/s/oP7NPoq5Hfmw_4MWKyfXsw)
+  - [Document库 - Excel帮助类，ExcelHelper实现（五）](https://mp.weixin.qq.com/s/CFDlLDMkZKv42k-7vhHroQ)
 
 
 # 赞赏码

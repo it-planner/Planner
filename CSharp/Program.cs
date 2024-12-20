@@ -7,7 +7,8 @@ namespace CSharp
     {
         private static void Main(string[] args)
         {
-            //TrimLastChar.Run();
+            MemoryLayout.Run();
+            MemoryLayout.RunChange(); 
 
             var config = ManualConfig.Create(DefaultConfig.Instance)
                          .WithOptions(ConfigOptions.DisableOptimizationsValidator);

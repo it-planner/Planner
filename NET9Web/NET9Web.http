@@ -1,6 +1,37 @@
 @NET9Web_HostAddress = http://localhost:5137
 
-GET {{NET9Web_HostAddress}}/weatherforecast/
+
+# @name login
+POST {{NET9Web_HostAddress}}/orders/login
 Accept: application/json
+
+###
+
+
+@id=string
+DELETE {{NET9Web_HostAddress}}/orders?id={{id}}
+Authorization: Bearer {{login.response.body.$.[0]}}
+###
+
+
+GET {{NET9Web_HostAddress}}/orders
+
+###
+
+PUT {{NET9Web_HostAddress}}/orders
+Content-Type: application/json
+
+{
+  //Order
+}
+
+###
+
+PUT {{NET9Web_HostAddress}}/orders
+Content-Type: application/json
+
+{
+  //Order
+}
 
 ###

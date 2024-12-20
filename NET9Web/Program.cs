@@ -57,8 +57,6 @@ namespace NET9Web
                 };
             });
 
-            builder.Services.AddAuthentication().AddJwtBearer();
-
             builder.Services.AddOpenApi(options =>
             {
                 options.AddDocumentTransformer((document, context, cancellationToken) =>
