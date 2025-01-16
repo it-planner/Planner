@@ -1,16 +1,12 @@
 
 using Ideal.Core.Common.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Any;
-using NET9Web.Transformers;
 using Scalar.AspNetCore;
-using System;
 using System.Text;
-using System.Xml.Linq;
 
-namespace NET9Web
+namespace Web
 {
     public class JwtSettingOption
     {
@@ -47,7 +43,7 @@ namespace NET9Web
                     ValidIssuer = JwtSettingOption.Issuer,
                     //验证接收者
                     ValidateAudience = true,
-                    ValidAudiences = new List<string> { JwtSettingOption.Audience, JwtSettingOption.Audience },
+                    ValidAudiences = [JwtSettingOption.Audience, JwtSettingOption.Audience],
                     //验证是否过期
                     ValidateLifetime = true,
                     //验证私钥

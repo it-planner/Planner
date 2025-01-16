@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
@@ -249,6 +250,7 @@ namespace NET9
         //}
         static void Main()
         {
+            var dd = new ConcurrentDictionary<string,string>();
             TimeSpan timeSpan2 = TimeSpan.FromSeconds(seconds: 101, milliseconds: 832);
             Console.WriteLine($"timeSpan2 = {timeSpan2}");
             // timeSpan2 = 00:01:41.8320000

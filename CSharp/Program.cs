@@ -7,8 +7,8 @@ namespace CSharp
     {
         private static void Main(string[] args)
         {
-            MemoryLayout.Run();
-            MemoryLayout.RunChange(); 
+            InitialThread.PriorityTest();
+
 
             var config = ManualConfig.Create(DefaultConfig.Instance)
                          .WithOptions(ConfigOptions.DisableOptimizationsValidator);

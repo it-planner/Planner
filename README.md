@@ -90,6 +90,14 @@
   - [.NET9 - 新功能体验（二）](https://mp.weixin.qq.com/s/ODrphBs2GaKFT7yLHE_KtQ)
   - [.NET9 - 新功能体验（三）](https://mp.weixin.qq.com/s/1xLgSXSwmGZb1DOV2kngJQ)
   - [.NET9 - Swagger平替Scalar详解（四）](https://mp.weixin.qq.com/s/9eKpMR5fXm0L9PX99pQ05Q)
+  
+### 并发编程
+  - [并发编程 - 死锁的产生、排查与解决方案](https://mp.weixin.qq.com/s/HMTUUMdvJ2SpUHxExqEaAg)
+  - [并发编程 - 初识线程](https://mp.weixin.qq.com/s/BUwsqOcQ5m3MRnsRVwUuoQ)
+  
+  
+### 开发工具
+  - [Visual Studio - API调试与测试工具之HTTP文件](https://mp.weixin.qq.com/s/duYYG7DT0EtK1Kbvnoogeg)
 
 # 中间件
 ## Kafka

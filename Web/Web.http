@@ -1,0 +1,52 @@
+﻿@Web_HostAddress = {{HostAddress}}
+
+
+//登录
+# @name login
+POST {{Web_HostAddress}}/login
+Accept: application/json
+
+###
+
+//查询订单
+@id=897
+GET {{Web_HostAddress}}/orders?id={{id}}
+Authorization: Bearer {{login.response.body.$.[0]}}
+
+###
+
+//添加订单
+POST {{Web_HostAddress}}/orders
+Authorization: Bearer {{login.response.body.$.[0]}}
+Content-Type: application/json
+
+{
+  "id": "897",
+  "date": "2024-12-24",
+  "price": 5,
+  "priceF": 2,
+  "name": "小红",
+  "status": "Pending"
+}
+
+###
+
+DELETE {{Web_HostAddress}}/orders?id={{id}}
+Authorization: Bearer {{login.response.body.$.[0]}}
+
+###
+
+PUT {{Web_HostAddress}}/orders?id={{id}}
+Authorization: Bearer {{login.response.body.$.[0]}}
+Content-Type: application/json
+
+{
+  "date": "2024-12-24",
+  "price": 5,
+  "priceF": 2,
+  "name": "小红",
+  "status": "Pending"
+}
+
+###
+

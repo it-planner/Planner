@@ -7,18 +7,13 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace NET9Web.Controllers
+namespace Web.Controllers
 {
     [ApiController]
     [Authorize]
     [Route("[controller]")]
     public class OrdersController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<OrdersController> _logger;
 
         public OrdersController(ILogger<OrdersController> logger)
@@ -26,19 +21,33 @@ namespace NET9Web.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// 添加
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        [HttpPost("")]
+        [Tags("非幂等接口")]
+        public bool Post([FromBody] Order order)
+        {
+            var test = new Order();
+            return order.Id == "897";
+        }
+
         //获取
-        [HttpGet(Name = "")]
+        [HttpGet(Name = "{id}")]
         [Tags("幂等接口")]
         [EndpointDescription("获取订单列表")]
-        public IEnumerable<Order> Get()
+        public Order Get(string id)
         {
-            return Enumerable.Range(1, 5).Select(index => new Order
+            return new Order
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                Price = Random.Shared.Next(-20, 55),
-                Name = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                Id = id,
+                Date = DateOnly.FromDateTime(DateTime.Now),
+                Name = "小红",
+                Price = 5,
+                Status = OrderStatus.Pending
+            };
         }
 
         //删除
@@ -48,19 +57,8 @@ namespace NET9Web.Controllers
         [EndpointDescription("根据订单id，删除相应订单")]
         public bool Delete(string id)
         {
-            return true;
-        }
-
-        /// <summary>
-        /// 添加
-        /// </summary>
-        /// <param name="order"></param>
-        /// <returns></returns>
-        [HttpPost(Name = "")]
-        [Tags("非幂等接口")]
-        public bool Post([FromBody] Order order)
-        {
-            return true;
+            var test = new Order();
+            return "897" == id;
         }
 
         /// <summary>
@@ -70,29 +68,24 @@ namespace NET9Web.Controllers
         /// <param name="order"></param>
         /// <returns></returns>
         [HttpPut(Name = "{id}")]
-        [Tags("非幂等接口")]
+        [Tags("幂等接口")]
         public bool Put([Description("订单Id")] string id, [FromBody] Order order)
         {
-            return true;
+            var test = new Order();
+            return order.Id == "897";
         }
 
-        [HttpPost("upload/image")]
-        [EndpointDescription("图片上传接口")]
-        [DisableRequestSizeLimit]
-        public bool UploadImgageAsync(IFormFile file)
-        {
-            return true;
-        }
+
 
         /// <summary>
         /// 登录成功后生成token
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        [HttpPost("login")]
+        [HttpPost("/login")]
         [EndpointDescription("登录成功后生成token")]
         [AllowAnonymous]
-        public string  Login()
+        public string Login()
         {
             //登录成功返回一个token
             // 1.定义需要使用到的Claims
@@ -119,6 +112,15 @@ namespace NET9Web.Controllers
             var token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
             return token;
         }
+
+
+        //[HttpPost("upload/image")]
+        //[EndpointDescription("图片上传接口")]
+        //[DisableRequestSizeLimit]
+        //public bool UploadImgageAsync(IFormFile file)
+        //{
+        //    return true;
+        //}
     }
 
     [JsonConverter(typeof(JsonStringEnumConverter<OrderStatus>))]

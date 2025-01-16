@@ -1,11 +1,13 @@
-using NET9Web.Controllers;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Web.Controllers;
 
-namespace NET9Web
+namespace Web
 {
     public class Order
     {
+        public string? Id { get; set; }
+
         [property: Description("创建日期")]
         public DateOnly Date { get; set; }
 
