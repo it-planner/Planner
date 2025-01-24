@@ -7,7 +7,8 @@ namespace CSharp
     {
         private static void Main(string[] args)
         {
-            InitialThread.PriorityTest();
+            ThreadSync.Run();
+            Console.ReadKey();
 
 
             var config = ManualConfig.Create(DefaultConfig.Instance)
@@ -17,7 +18,7 @@ namespace CSharp
             //                                   sizeUnit: null,
             //                                   timeUnit: null,
             //                                   textColumnJustification: SummaryTable.SummaryTableColumn.TextJustification.Right));
-            _ = BenchmarkRunner.Run<TrimLastCharBenchmark>(config);
+            //_ = BenchmarkRunner.Run<TrimLastCharBenchmark>(config);
         }
     }
 }

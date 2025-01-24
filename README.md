@@ -94,6 +94,8 @@
 ### 并发编程
   - [并发编程 - 死锁的产生、排查与解决方案](https://mp.weixin.qq.com/s/HMTUUMdvJ2SpUHxExqEaAg)
   - [并发编程 - 初识线程](https://mp.weixin.qq.com/s/BUwsqOcQ5m3MRnsRVwUuoQ)
+  - [并发编程 - 线程浅试](https://mp.weixin.qq.com/s/mby0p8lVgHCM0VNZWm34bw)
+  - [并发编程 - 线程同步（一）](https://mp.weixin.qq.com/s/kWjPsDHyaNdfoUND1t3qug)
   
   
 ### 开发工具
