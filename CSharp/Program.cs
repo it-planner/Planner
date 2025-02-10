@@ -7,9 +7,9 @@ namespace CSharp
     {
         private static void Main(string[] args)
         {
-            ThreadSync.Run();
-            Console.ReadKey();
+            ThreadLock.LockNotReadonlyRun();
 
+            Console.ReadKey();
 
             var config = ManualConfig.Create(DefaultConfig.Instance)
                          .WithOptions(ConfigOptions.DisableOptimizationsValidator);
