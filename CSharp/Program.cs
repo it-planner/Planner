@@ -7,7 +7,7 @@ namespace CSharp
     {
         private static void Main(string[] args)
         {
-            ThreadLock.LockNotReadonlyRun();
+            ThreadMonitor.LockTryEnterRun();
 
             Console.ReadKey();
 
